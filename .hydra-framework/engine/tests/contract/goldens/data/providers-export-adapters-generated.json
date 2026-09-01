@@ -1,0 +1,25 @@
+{
+  "exit_code": 0,
+  "manifest": {
+    ".agents/skills/hydra-demo-skill/.hydra-adapter.yaml": "4c3377203ba40aef41453aa0e0dd251a58f3ce983eb80f9efaa6bc30a06a7d1f",
+    ".agents/skills/hydra-demo-skill/SKILL.md": "0eb678524bcc23c73d6019016d430791f4935d800adc09451ef5ce35ddaf16bf",
+    ".claude/skills/hydra-demo-skill/.hydra-adapter.yaml": "c555c49a0f4261890717aeb4ba0abd9fde124d3757020b305247bcbc49b0dbc4",
+    ".claude/skills/hydra-demo-skill/SKILL.md": "0eb678524bcc23c73d6019016d430791f4935d800adc09451ef5ce35ddaf16bf",
+    ".hydra-framework/README.md": "0de5f42b131305a48c4775ac871045712943998891b583e4381784801df42f4b",
+    ".hydra-framework/adapters/providers/claude/capability-map.yaml": "b003af671c56a0420ad81e7ad9b88a94b6f78d330e086a7d8fd61f6e1b9e23b6",
+    ".hydra-framework/adapters/providers/codex/capability-map.yaml": "b7477930e8b873de520503637055733760efabf4afe99e83739eda30ea03b632",
+    ".hydra-framework/capabilities/agents/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".hydra-framework/capabilities/skills/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".hydra-framework/capabilities/skills/demo-skill/metadata.yaml": "3ffd2b2080c679228584f14e9eecd5014b40d9b65ce1dcc72999849047ec3657",
+    ".hydra-framework/capabilities/skills/demo-skill/skill.md": "211f2aec67e9d70ac8873b5efe4e7838655dfc73db87ec51b0e55f960b64f437",
+    ".hydra-framework/core/placement-rules.md": "5ccfd85befd6aa3ff7d5dd0fc1417b21ae5e3186839a360348c8b8ed51dfb60b",
+    ".hydra-framework/manifest.yaml": "bc74566ab21d13c108337058c3db644e60fd8036887039425542e79efcb73c93",
+    ".hydra-framework/tasks/personal/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".hydra-framework/tasks/templates/checkpoint.md": "25f014f86a8490b4c636b360b343e8d2a8cc818c68948a3d4d243d928b7c0d99",
+    ".hydra-framework/tasks/templates/task.md": "32dd805b125370ccb27117f3984a894c773d0685fcd378aa6cbce3da715dba10",
+    "AGENTS.md": "a52ae73fc0a471d277c57a8c65af99c0b3e814f984b2ead607c36d5115eb12bb",
+    "AI_SYSTEM.md": "5a1cc2ad0944ad277aa08fe46d44c654ef5fa0256d6ca91925a2af23d6dfa5d6"
+  },
+  "stderr": "",
+  "stdout": "Hydra adapters: wrote 4 of 4 generated files\n- create: .agents/skills/hydra-demo-skill/.hydra-adapter.yaml\n- create: .agents/skills/hydra-demo-skill/SKILL.md\n- create: .claude/skills/hydra-demo-skill/.hydra-adapter.yaml\n- create: .claude/skills/hydra-demo-skill/SKILL.md\n"
+}

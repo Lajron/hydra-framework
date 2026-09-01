@@ -1,0 +1,20 @@
+schema: hydra-framework.skill.v1
+hydra_id: hydra://capability/skill/complexity-review
+uid: 70fdc169-475b-4c7a-8b08-4dc555a01101
+schema_version: 3
+hydra_object_kind: skill
+name: complexity-review
+description: Review a diff or repository area for unnecessary implementation complexity and identify concrete deletions or simpler replacements.
+scope: common-seed
+maturity: seed
+owners:
+  team: hydra
+provider_requirements:
+  - read_files
+  - run_read_only_commands
+dependencies:
+  knowledge:
+    - capability-routing
+relations: []
+provenance:
+  sources: []

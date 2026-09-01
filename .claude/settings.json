@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(python3 .hydra-framework/scripts/hydra.py:*)",
+      "Bash(python3 \"$CLAUDE_PROJECT_DIR/.hydra-framework/scripts/hydra.py\":*)",
+      "Bash(rg:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git branch:*)",
+      "Bash(git show:*)"
+    ]
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.hydra-framework/scripts/hydra.py\" route-prompt",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.hydra-framework/scripts/hydra.py\" hook-command-output",
+            "timeout": 10,
+            "statusMessage": "Reducing noisy Bash output"
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.hydra-framework/scripts/hydra.py\" hook-post-edit",
+            "timeout": 30,
+            "statusMessage": "Checking Hydra surface and package gates"
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.hydra-framework/scripts/hydra.py\" hook-retry-guard",
+            "timeout": 10,
+            "statusMessage": "Checking repeated Bash failure"
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "matcher": "general-purpose|Explore|Plan",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.hydra-framework/scripts/hydra.py\" hook-subagent-start",
+            "timeout": 10,
+            "statusMessage": "Attaching Hydra pointers for the subagent"
+          }
+        ]
+      }
+    ]
+  }
+}

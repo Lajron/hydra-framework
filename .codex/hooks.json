@@ -1,0 +1,65 @@
+{
+  "description": "Hydra lifecycle hooks for Codex. Canonical logic lives in .hydra-framework/.",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$(git rev-parse --show-toplevel)/.hydra-framework/scripts/hydra.py\" route-prompt",
+            "timeout": 10,
+            "statusMessage": "Routing prompt through Hydra"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|apply_patch",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$(git rev-parse --show-toplevel)/.hydra-framework/scripts/hydra.py\" hook-post-edit",
+            "timeout": 30,
+            "statusMessage": "Checking Hydra surface and package gates"
+          }
+        ]
+      },
+      {
+        "matcher": "^Bash$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$(git rev-parse --show-toplevel)/.hydra-framework/scripts/hydra.py\" hook-codex-command-output",
+            "timeout": 30,
+            "statusMessage": "Reducing large Bash output through Hydra"
+          }
+        ]
+      },
+      {
+        "matcher": "^Bash$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$(git rev-parse --show-toplevel)/.hydra-framework/scripts/hydra.py\" hook-codex-retry-guard",
+            "timeout": 30,
+            "statusMessage": "Checking repeated Bash failures through Hydra"
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "matcher": "general-purpose|Explore|Plan",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$(git rev-parse --show-toplevel)/.hydra-framework/scripts/hydra.py\" hook-subagent-start",
+            "timeout": 10,
+            "statusMessage": "Attaching Hydra pointers for the subagent"
+          }
+        ]
+      }
+    ]
+  }
+}

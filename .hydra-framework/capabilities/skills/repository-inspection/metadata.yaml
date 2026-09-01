@@ -1,0 +1,17 @@
+schema: hydra-framework.skill.v1
+hydra_id: hydra://capability/skill/repository-inspection
+uid: be6de7bd-a1a7-4d51-b5b0-22be6aeb070f
+schema_version: 3
+hydra_object_kind: skill
+name: repository-inspection
+description: Inspect repository structure, Hydra docs, active tasks, and relevant knowledge before non-trivial repo work.
+scope: common-seed
+maturity: seed
+owners:
+  team: hydra
+provider_requirements:
+  - read_files
+  - run_read_only_commands
+relations: []
+provenance:
+  sources: []

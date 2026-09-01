@@ -1,0 +1,22 @@
+schema: hydra-framework.skill.v1
+hydra_id: hydra://capability/skill/minimum-correct-diff
+uid: 3b34eca5-5480-4715-a9d6-c886dd9ccf70
+schema_version: 3
+hydra_object_kind: skill
+name: minimum-correct-diff
+description: Use when implementing, refactoring, or fixing code where avoiding unnecessary implementation surface matters.
+scope: common-seed
+maturity: seed
+owners:
+  team: hydra
+provider_requirements:
+  - read_files
+  - edit_files
+  - run_local_commands
+dependencies:
+  knowledge:
+    - capability-routing
+    - token-efficiency
+relations: []
+provenance:
+  sources: []

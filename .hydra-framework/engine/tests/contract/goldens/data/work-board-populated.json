@@ -1,0 +1,22 @@
+{
+  "exit_code": 0,
+  "manifest": {
+    ".hydra-framework/README.md": "0de5f42b131305a48c4775ac871045712943998891b583e4381784801df42f4b",
+    ".hydra-framework/adapters/providers/claude/capability-map.yaml": "b003af671c56a0420ad81e7ad9b88a94b6f78d330e086a7d8fd61f6e1b9e23b6",
+    ".hydra-framework/adapters/providers/codex/capability-map.yaml": "b7477930e8b873de520503637055733760efabf4afe99e83739eda30ea03b632",
+    ".hydra-framework/core/placement-rules.md": "5ccfd85befd6aa3ff7d5dd0fc1417b21ae5e3186839a360348c8b8ed51dfb60b",
+    ".hydra-framework/manifest.yaml": "bc74566ab21d13c108337058c3db644e60fd8036887039425542e79efcb73c93",
+    ".hydra-framework/capabilities/agents/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".hydra-framework/capabilities/skills/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".hydra-framework/tasks/personal/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".hydra-framework/tasks/personal/fixture-owner/2026-01-01-fixture-task.md": "38ad173faa8e714773bbad8cc24a7e033ab5e481c0643361f82b9e921a594f50",
+    ".hydra-framework/tasks/personal/fixture-owner/checkpoints/2026-01-01-fixture-task-checkpoint.md": "a11154f4116e050d3ddcaa4dcf295410f1465724f5ce6891dafbdeb8f7402cda",
+    ".hydra-framework/tasks/personal/other-owner/2026-01-01-other-task.md": "3616eb277bc0eb037340beb43121cd713c484e8aba6ff306f7163a07d597053e",
+    ".hydra-framework/tasks/templates/checkpoint.md": "25f014f86a8490b4c636b360b343e8d2a8cc818c68948a3d4d243d928b7c0d99",
+    ".hydra-framework/tasks/templates/task.md": "32dd805b125370ccb27117f3984a894c773d0685fcd378aa6cbce3da715dba10",
+    "AGENTS.md": "a52ae73fc0a471d277c57a8c65af99c0b3e814f984b2ead607c36d5115eb12bb",
+    "AI_SYSTEM.md": "5a1cc2ad0944ad277aa08fe46d44c654ef5fa0256d6ca91925a2af23d6dfa5d6"
+  },
+  "stderr": "",
+  "stdout": "\nfixture-owner (1 checkpoint(s))\n  [active] fixture-task \u2014 updated 2026-01-01\n    Describe the engineering objective.\n    .hydra-framework/tasks/personal/fixture-owner/2026-01-01-fixture-task.md\n\nother-owner\n  [active] other-task \u2014 updated 2026-01-01\n    Describe the engineering objective.\n    .hydra-framework/tasks/personal/other-owner/2026-01-01-other-task.md\n"
+}

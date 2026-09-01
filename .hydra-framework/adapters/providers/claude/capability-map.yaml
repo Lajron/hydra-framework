@@ -1,0 +1,41 @@
+schema: hydra-framework.capability-map.v1
+provider: claude
+runtime: claude-code
+verified: 2026-07-30
+certainty: inferred
+source: https://code.claude.com/docs/en/sub-agents
+
+# Hydra capability classes -> Claude Code subagent `model:` frontmatter values.
+# Claude Code accepts aliases such as `opus`, `sonnet`, `haiku`, and `inherit`.
+# Hydra records aliases only; full model IDs date quickly and require provider
+# catalog checks that do not belong in routine framework operation.
+capability_classes:
+  fast-default: inherit
+  cheap-triage: haiku
+  deep-reasoning: opus
+  large-context: opus
+  tool-heavy: inherit
+  review-focused: opus
+  local-private: inherit
+
+# Hydra effort budgets -> Claude Code `effort:` frontmatter values.
+# Available levels depend on the resolved model.
+effort_budgets:
+  minimal: low
+  low: low
+  standard: high
+  high: xhigh
+  max: max
+
+delegation_controls:
+  generated_agent_policy: supported
+  generic_subagent_start_context: advisory
+  effort_class_capping: supported
+  max_active_workers: advisory
+  max_depth: advisory
+
+notes:
+  - Aliases track the provider's current generation better than full IDs.
+  - inherit means the subagent runs on the main session model.
+  - Do not call provider model catalogs just to refresh reference IDs; add concrete IDs only for a provider that cannot use aliases.
+  - Canonical Hydra records must name a capability class, never a model ID.

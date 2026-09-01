@@ -1,0 +1,23 @@
+#!/bin/sh
+# Hydra pre-push check. Optional and opt-in: install with
+#
+#     python3 .hydra-framework/scripts/hydra.py install-hooks
+#
+# It calls the same `hydra.py validate` that CI runs. Nothing is checked only
+# here — a check that lives solely in an uninstalled hook is not a check.
+#
+# Push is the boundary this guards on purpose. Pre-commit fires constantly, and
+# blocking commits on bookkeeping is how a team ends up passing --no-verify.
+set -e
+
+root=$(git rev-parse --show-toplevel)
+script="$root/.hydra-framework/scripts/hydra.py"
+
+[ -f "$script" ] || exit 0
+
+if ! python3 "$script" validate; then
+    echo ""
+    echo "Hydra validate failed. Push blocked."
+    echo "Fix the errors above, or push with --no-verify if you are certain."
+    exit 1
+fi

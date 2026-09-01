@@ -1,0 +1,26 @@
+schema: hydra-framework.skill.v2
+hydra_id: hydra://capability/skill/framework-takeover
+uid: 6e662f3e-bc1d-4ae2-9f2a-8fc38cc25cac
+schema_version: 3
+hydra_object_kind: skill
+kind: procedure
+name: framework-takeover
+description: Take over an existing non-Hydra or legacy agentic setup by detecting foreign provider material, confirming scope, and draining it through the material migration workflow.
+scope: common-seed
+maturity: seed
+owners:
+  team: hydra
+provider_requirements:
+  - read_files
+  - edit_files
+  - run_local_commands
+dependencies:
+  workflows:
+    - material-migration
+  skills:
+    - adoption
+relations:
+  - hydra://capability/workflow/material-migration
+provenance:
+  sources:
+    - .hydra-framework/capabilities/workflows/material-migration.md

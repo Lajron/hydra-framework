@@ -1,0 +1,187 @@
+schema: hydra-framework.object-sidecar.v1
+title: Hydra Object Sidecars
+objects:
+  package-template-readme:
+    hydra_id: hydra://knowledge-template/package/readme
+    uid: 954f110f-31cd-4024-a9cd-68c2ba544fc3
+    schema_version: 3
+    aliases:
+      - hydra://knowledge-template/package/index
+    kind: knowledge-template
+    title: Knowledge Package Template Index
+    status: active
+    scope: base-seed
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/README.md
+    owners:
+      team: hydra
+    provenance:
+      sources: []
+    relations: []
+  package-template-overview:
+    hydra_id: hydra://knowledge-template/package/overview
+    uid: fc80270e-c601-4f68-a3ed-f3d9e386b9db
+    schema_version: 3
+    kind: knowledge-template
+    title: Knowledge Package Overview Template
+    status: active
+    scope: base-seed
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/overview.md
+    owners:
+      team: hydra
+    provenance:
+      sources: []
+    relations: []
+  package-template-state:
+    hydra_id: hydra://knowledge-template/package/state
+    uid: 6b07c738-8f8f-4573-a2fb-74fea04e3ebc
+    schema_version: 3
+    kind: knowledge-template
+    title: Knowledge Package State Template
+    status: active
+    scope: base-seed
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/state.md
+    owners:
+      team: hydra
+    provenance:
+      sources: []
+    relations: []
+  package-template-glossary:
+    hydra_id: hydra://knowledge-template/package/glossary
+    uid: 9294188c-b0f7-4d1b-a2d1-dbfe7695f851
+    schema_version: 3
+    kind: knowledge-template
+    title: Knowledge Package Glossary Template
+    status: active
+    scope: base-seed
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/glossary.md
+    owners:
+      team: hydra
+    provenance:
+      sources: []
+    relations: []
+  package-template-sources:
+    hydra_id: hydra://knowledge-template/package/sources
+    uid: cd61034a-a504-49f2-9bdd-2e2c05601457
+    schema_version: 3
+    kind: knowledge-template
+    title: Knowledge Package Sources Template
+    status: active
+    scope: base-seed
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/sources.md
+    owners:
+      team: hydra
+    provenance:
+      sources: []
+    relations: []
+  package-template-units-example:
+    hydra_id: hydra://knowledge-template/package/units-example
+    uid: cde96ca9-d600-4256-903c-a065c98caf55
+    schema_version: 3
+    kind: knowledge-template
+    title: Knowledge Package Units Example Template
+    status: active
+    scope: base-seed
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/units/example.md
+    owners:
+      team: hydra
+    provenance:
+      sources: []
+    relations: []
+  package-template-definition-of-done:
+    hydra_id: hydra://knowledge-template/package/definition-of-done
+    uid: da8c5a95-5537-4d34-b766-afa5f045236f
+    schema_version: 3
+    kind: knowledge-template
+    title: Knowledge Package Definition Of Done Template
+    status: active
+    scope: base-seed
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/definition-of-done.md
+    owners:
+      team: hydra
+    provenance:
+      sources: []
+    relations: []
+  package-template-problems:
+    hydra_id: hydra://knowledge-template/package/problems
+    uid: 2ad87a96-2725-49e3-aec2-fd90d1ac93c5
+    schema_version: 3
+    kind: knowledge-template
+    title: Knowledge Package Problems Template
+    status: active
+    scope: base-seed
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/problems.md
+    owners:
+      team: hydra
+    provenance:
+      sources: []
+    relations: []
+  package-template-questions:
+    hydra_id: hydra://knowledge-template/package/questions
+    uid: 7f8cb5ca-26d1-49a3-9d7f-1b7673800e75
+    schema_version: 3
+    kind: knowledge-template
+    title: Knowledge Package Questions Template
+    status: active
+    scope: base-seed
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/questions.md
+    owners:
+      team: hydra
+    provenance:
+      sources: []
+    relations: []
+  package-template-routing:
+    hydra_id: hydra://knowledge-template/package/routing
+    uid: 7db2bdec-1023-4127-b601-ca1fc7149ce4
+    schema_version: 3
+    kind: knowledge-template
+    title: Knowledge Package Routing Template
+    status: active
+    scope: base-seed
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/routing.yaml
+    owners:
+      team: hydra
+    provenance:
+      sources: []
+    relations: []
+  package-template-architecture-graph:
+    hydra_id: hydra://knowledge-template/package/architecture-graph
+    uid: 879c98a6-fdc6-4a9c-b263-d82a16a5430d
+    schema_version: 3
+    kind: knowledge-template
+    title: Knowledge Package Architecture Graph Template
+    status: active
+    scope: base-seed
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/architecture/00-graph.md
+    owners:
+      team: hydra
+    provenance:
+      sources: []
+    relations: []
+  package-template-architecture-example:
+    hydra_id: hydra://knowledge-template/package/architecture-example
+    uid: 5447f8f8-f5b2-4315-8b4d-d0c4f9f6be93
+    schema_version: 3
+    kind: knowledge-template
+    title: Knowledge Package Architecture Example Template
+    status: active
+    scope: base-seed
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/architecture/01-example.md
+    owners:
+      team: hydra
+    provenance:
+      sources: []
+    relations: []
+  package-template-check-script:
+    hydra_id: hydra://knowledge-template/package/check-script
+    uid: 16832a4c-aa19-4262-a282-f6c8fe9655be
+    schema_version: 3
+    kind: knowledge-template
+    title: Knowledge Package Check Script Template
+    status: active
+    scope: base-seed
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/scripts/check.sh
+    owners:
+      team: hydra
+    provenance:
+      sources: []
+    relations: []

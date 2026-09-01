@@ -1,0 +1,24 @@
+schema: hydra-framework.skill.v2
+hydra_id: hydra://capability/skill/hydra-cleanup
+uid: 2c5ad0ed-3e69-4db6-bf4f-1b6cc6ac4c9f
+schema_version: 3
+hydra_object_kind: skill
+kind: procedure
+name: hydra-cleanup
+description: Review and reduce stale, redundant, misleading, or bloated Hydra framework material while preserving meaning, safety, and source-of-truth boundaries.
+scope: base-seed
+maturity: seed
+owners:
+  team: hydra
+provider_requirements:
+  - read_files
+  - edit_files
+  - run_local_commands
+dependencies:
+  knowledge:
+    - .hydra-framework/repo/knowledge/silent-failure-modes.md
+  skills:
+    - minimum-correct-diff
+relations: []
+provenance:
+  sources: []

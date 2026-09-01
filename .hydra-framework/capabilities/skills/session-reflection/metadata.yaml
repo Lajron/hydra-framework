@@ -1,0 +1,25 @@
+schema: hydra-framework.skill.v2
+hydra_id: hydra://capability/skill/session-reflection
+uid: 5f60f462-3acd-4d42-b5f0-cedf96112d55
+schema_version: 3
+hydra_object_kind: skill
+kind: procedure
+name: session-reflection
+description: Capture one sanitized, durable observation about using this framework as a reflection packet, or say why none is warranted.
+scope: common-seed
+maturity: experimental
+owners:
+  team: hydra
+provider_requirements:
+  - read_files
+  - edit_files
+  - run_read_only_commands
+dependencies:
+  knowledge:
+    - intake-lifecycle
+    - state-tiers
+  workflows:
+    - task-lifecycle
+relations: []
+provenance:
+  sources: []

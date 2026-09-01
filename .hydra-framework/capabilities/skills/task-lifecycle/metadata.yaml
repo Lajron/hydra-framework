@@ -1,0 +1,24 @@
+schema: hydra-framework.skill.v1
+hydra_id: hydra://capability/skill/task-lifecycle
+uid: 4de6ce62-4f3b-4c8a-af4f-3cdbd129a659
+schema_version: 3
+hydra_object_kind: skill
+name: task-lifecycle
+description: Use when starting, checkpointing, resuming, or completing persisted non-trivial Hydra tasks.
+scope: common-seed
+maturity: seed
+owners:
+  team: hydra
+provider_requirements:
+  - read_files
+  - edit_files
+  - run_local_commands
+dependencies:
+  workflows:
+    - task-lifecycle
+  knowledge:
+    - operational-readiness
+    - task-step-state
+relations: []
+provenance:
+  sources: []

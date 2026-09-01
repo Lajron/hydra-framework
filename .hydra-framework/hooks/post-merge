@@ -1,0 +1,19 @@
+#!/bin/sh
+# Best-effort private knowledge-index and object-registry refresh after
+# Git changes. A merge can auto-resolve the generated object registry
+# without ever regenerating it, so digests carried over from either side
+# can be stale; rerunning `ref index` here self-heals that instead of
+# leaving it for someone to hand-resolve. `ref store rebuild --if-exists`
+# runs after `ref index` so it rebuilds
+# from the just-refreshed export, not a stale one; it only acts once someone
+# has built the store at least once.
+set -e
+
+root=$(git rev-parse --show-toplevel)
+script="$root/.hydra-framework/scripts/hydra.py"
+
+[ -f "$script" ] || exit 0
+
+python3 "$script" hook-reindex-knowledge --if-exists >/dev/null 2>&1 || true
+python3 "$script" ref index >/dev/null 2>&1 || true
+python3 "$script" ref store rebuild --if-exists >/dev/null 2>&1 || true

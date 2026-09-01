@@ -1,0 +1,23 @@
+schema: hydra-framework.skill.v2
+hydra_id: hydra://capability/skill/wiki-authoring
+uid: a76ccc61-44e6-4beb-bd58-bc285659692b
+schema_version: 3
+hydra_object_kind: skill
+kind: procedure
+name: wiki-authoring
+description: Draft or update a project-wiki page as an AI agent, with correct citation, source-of-truth, and validation discipline.
+scope: common-seed
+maturity: seed
+owners:
+  team: hydra
+provider_requirements:
+  - read_files
+  - edit_files
+  - run_local_commands
+dependencies:
+  knowledge: []
+relations: []
+provenance:
+  sources:
+    - .hydra-framework/surfaces/README.md
+    - project-wiki/hydra-framework/reference/documentation-authoring.md

@@ -1,0 +1,48 @@
+schema: hydra-framework.capability-map.v1
+provider: codex
+runtime: codex-cli 0.146.0
+verified: 2026-07-30
+certainty: confirmed
+source: https://learn.chatgpt.com/docs/agent-configuration/subagents.md
+
+# Codex custom agents are TOML files under `.codex/agents/` and may set `model`
+# and `model_reasoning_effort`, both verified against the source above.
+#
+# Capability classes stay unresolved on purpose. Codex has no stable model
+# aliases the way Claude does, so the only mapping available is a concrete slug
+# from whichever model catalog the local account can see. Pinning one here would
+# put machine- and plan-specific state into shared framework truth and override
+# the host's own `model` setting for every generated agent. With no mapping the
+# exporter omits `model`, and each agent inherits the runtime's configured model.
+#
+# A repository that deliberately wants pinned Codex models should map them here
+# and record that choice with `hydra.py evolution record`.
+capability_classes:
+  fast-default: unresolved
+  cheap-triage: unresolved
+  deep-reasoning: unresolved
+  large-context: unresolved
+  tool-heavy: unresolved
+  review-focused: unresolved
+  local-private: unresolved
+
+# Codex reasoning levels are runtime vocabulary, not model identity, so these
+# are safe to share.
+effort_budgets:
+  minimal: low
+  low: low
+  standard: medium
+  high: high
+  max: max
+
+delegation_controls:
+  generated_agent_policy: supported
+  generic_subagent_start_context: advisory
+  effort_class_capping: supported
+  max_active_workers: advisory
+  max_depth: advisory
+
+notes:
+  - Reasoning levels low, medium, high, xhigh, max, and ultra were confirmed in the Codex 0.146.0 model catalog on 2026-07-30.
+  - Do not copy the Claude map here. Provider runtimes differ.
+  - Hydra treats `unresolved` as "no mapping"; exporters omit the field entirely.

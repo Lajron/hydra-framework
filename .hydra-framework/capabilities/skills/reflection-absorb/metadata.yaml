@@ -1,0 +1,26 @@
+schema: hydra-framework.skill.v2
+hydra_id: hydra://capability/skill/reflection-absorb
+uid: b834a4b7-3d22-4395-b5d2-e578449b6b60
+schema_version: 3
+hydra_object_kind: skill
+kind: procedure
+name: reflection-absorb
+description: Select reflection packets in scope or past their Held-Until date, propose an outcome for each, and drain approved ones into canonical state or deletion.
+scope: common-seed
+maturity: experimental
+owners:
+  team: hydra
+provider_requirements:
+  - read_files
+  - edit_files
+  - run_local_commands
+dependencies:
+  knowledge:
+    - intake-lifecycle
+    - state-tiers
+  workflows:
+    - task-lifecycle
+relations:
+  - hydra://capability/skill/session-reflection
+provenance:
+  sources: []

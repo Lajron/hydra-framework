@@ -1,0 +1,879 @@
+schema: hydra-framework.object-registry.v1
+objects:
+  hydra://capability/agent/framework-evolution:
+    uid: 04c96296-f8d5-460f-87a3-e76c6d68c356
+    path: .hydra-framework/capabilities/agents/framework-evolution/metadata.yaml
+    digest: sha256:6c2c66fb0f5c2c302a3b58da9493a3761f680ce53c85db61ee5353d1052b3fc1
+    family: Capability
+    kind: agent
+    status: seed
+    tier: shared
+    scope: common-seed
+    schema_version: 3
+    title: "framework-evolution"
+    aliases: []
+    relations: []
+    provenance_sources: []
+  hydra://capability/agent/orchestrator:
+    uid: f209e5fa-e1cf-4f1b-81df-9062eaebdb15
+    path: .hydra-framework/capabilities/agents/orchestrator/metadata.yaml
+    digest: sha256:6578086c05679a94319cdd396d0e044cca011e87e8f0dd40999ed7534ef56357
+    family: Capability
+    kind: agent
+    status: seed
+    tier: shared
+    scope: common-seed
+    schema_version: 3
+    title: "orchestrator"
+    aliases: []
+    relations: []
+    provenance_sources: []
+  hydra://capability/agent/repo-adoption:
+    uid: c5b6ea18-1325-4e4c-a11c-b1abf4d3c56e
+    path: .hydra-framework/capabilities/agents/repo-adoption/metadata.yaml
+    digest: sha256:a0bf85758b595945d71d5454c418fd357ebe632e98448ac0c4149a10b94fff06
+    family: Capability
+    kind: agent
+    status: seed
+    tier: shared
+    scope: common-seed
+    schema_version: 3
+    title: "repo-adoption"
+    aliases: []
+    relations: []
+    provenance_sources: []
+  hydra://capability/agent/repository-cartographer:
+    uid: b6e0597f-38ca-4dcc-87e9-922e96d31717
+    path: .hydra-framework/capabilities/agents/repository-cartographer/metadata.yaml
+    digest: sha256:bc56f5f063ffd88a403921fc25ba27c34b9f0af6bbc7c1c206b394bf63f15d52
+    family: Capability
+    kind: agent
+    status: seed
+    tier: shared
+    scope: common-seed
+    schema_version: 3
+    title: "repository-cartographer"
+    aliases: []
+    relations: []
+    provenance_sources: []
+  hydra://capability/agent/task-steward:
+    uid: fff2a100-86c0-4849-a321-06af75a9d2ce
+    path: .hydra-framework/capabilities/agents/task-steward/metadata.yaml
+    digest: sha256:47185fe9a88cdeacb519bc38c1f157e742a62c4ca89a4a2369dd9bacde038fb3
+    family: Capability
+    kind: agent
+    status: seed
+    tier: shared
+    scope: common-seed
+    schema_version: 3
+    title: "task-steward"
+    aliases: []
+    relations: []
+    provenance_sources: []
+  hydra://capability/skill/adoption:
+    uid: 8e424ab6-458a-405b-8db1-1639f1923430
+    path: .hydra-framework/capabilities/skills/adoption/metadata.yaml
+    digest: sha256:06bd37ebc8d84ec2ff832c61f506608e8282bb3623f18185b71ec2f6d4157894
+    family: Capability
+    kind: skill
+    status: seed
+    tier: shared
+    scope: common-seed
+    schema_version: 3
+    title: "adoption"
+    aliases: []
+    relations: []
+    provenance_sources: []
+  hydra://capability/skill/complexity-review:
+    uid: 70fdc169-475b-4c7a-8b08-4dc555a01101
+    path: .hydra-framework/capabilities/skills/complexity-review/metadata.yaml
+    digest: sha256:56065ee3244431aa8c1917ff2991ce5b3b83754909d3ff8f5d7bae708d202875
+    family: Capability
+    kind: skill
+    status: seed
+    tier: shared
+    scope: common-seed
+    schema_version: 3
+    title: "complexity-review"
+    aliases: []
+    relations: []
+    provenance_sources: []
+  hydra://capability/skill/framework-takeover:
+    uid: 6e662f3e-bc1d-4ae2-9f2a-8fc38cc25cac
+    path: .hydra-framework/capabilities/skills/framework-takeover/metadata.yaml
+    digest: sha256:7fa9a45f0b2514680c78c70bd9011d53ba9f5e5951069d2c6f20e8b2e4572b31
+    family: Capability
+    kind: skill
+    status: seed
+    tier: shared
+    scope: common-seed
+    schema_version: 3
+    title: "framework-takeover"
+    aliases: []
+    relations:
+      - hydra://capability/workflow/material-migration
+    provenance_sources:
+      - .hydra-framework/capabilities/workflows/material-migration.md
+  hydra://capability/skill/hydra-cleanup:
+    uid: 2c5ad0ed-3e69-4db6-bf4f-1b6cc6ac4c9f
+    path: .hydra-framework/capabilities/skills/hydra-cleanup/metadata.yaml
+    digest: sha256:407ec5ff6c6f231f7db2abaeeea573b44aac58d4d64e45cacc0446bc3e07635a
+    family: Capability
+    kind: skill
+    status: seed
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "hydra-cleanup"
+    aliases: []
+    relations: []
+    provenance_sources: []
+  hydra://capability/skill/knowledge-unit:
+    uid: 4b77b871-fbbc-4e0c-8809-7cced96282f7
+    path: .hydra-framework/capabilities/skills/knowledge-unit/metadata.yaml
+    digest: sha256:38a2a5de779f73079ed7e782e1ce007188b27f04b7d377f63936993aa4302852
+    family: Capability
+    kind: skill
+    status: seed
+    tier: shared
+    scope: common-seed
+    schema_version: 3
+    title: "knowledge-unit"
+    aliases: []
+    relations:
+      - hydra://capability/skill/repository-inspection
+      - hydra://capability/workflow/material-migration
+    provenance_sources: []
+  hydra://capability/skill/minimum-correct-diff:
+    uid: 3b34eca5-5480-4715-a9d6-c886dd9ccf70
+    path: .hydra-framework/capabilities/skills/minimum-correct-diff/metadata.yaml
+    digest: sha256:e1d13d46a09ab5406ec0d723271d895072ce50b3bdeab062bbd796b245333b37
+    family: Capability
+    kind: skill
+    status: seed
+    tier: shared
+    scope: common-seed
+    schema_version: 3
+    title: "minimum-correct-diff"
+    aliases: []
+    relations: []
+    provenance_sources: []
+  hydra://capability/skill/reflection-absorb:
+    uid: b834a4b7-3d22-4395-b5d2-e578449b6b60
+    path: .hydra-framework/capabilities/skills/reflection-absorb/metadata.yaml
+    digest: sha256:7791e1bbd44117a4a0ec69a81b117c17a91d8577ee67675a4f7e3e961df941d3
+    family: Capability
+    kind: skill
+    status: experimental
+    tier: shared
+    scope: common-seed
+    schema_version: 3
+    title: "reflection-absorb"
+    aliases: []
+    relations:
+      - hydra://capability/skill/session-reflection
+    provenance_sources: []
+  hydra://capability/skill/repository-inspection:
+    uid: be6de7bd-a1a7-4d51-b5b0-22be6aeb070f
+    path: .hydra-framework/capabilities/skills/repository-inspection/metadata.yaml
+    digest: sha256:e09afe0350b69cff5f1b110b95081fe47a301c0a1d8a6c7e4bd8167e3eeb83b4
+    family: Capability
+    kind: skill
+    status: seed
+    tier: shared
+    scope: common-seed
+    schema_version: 3
+    title: "repository-inspection"
+    aliases: []
+    relations: []
+    provenance_sources: []
+  hydra://capability/skill/seed-reconciliation:
+    uid: 00b83436-4c9d-4790-ae75-3fca55addfef
+    path: .hydra-framework/capabilities/skills/seed-reconciliation/metadata.yaml
+    digest: sha256:a046956406163b4ef2e561d467b71080718e66b26134b85073b15747398e0210
+    family: Capability
+    kind: skill
+    status: seed
+    tier: shared
+    scope: common-seed
+    schema_version: 3
+    title: "seed-reconciliation"
+    aliases: []
+    relations: []
+    provenance_sources: []
+  hydra://capability/skill/session-reflection:
+    uid: 5f60f462-3acd-4d42-b5f0-cedf96112d55
+    path: .hydra-framework/capabilities/skills/session-reflection/metadata.yaml
+    digest: sha256:eae9510f7fe2a162b367e532c46c14672fa83eeb92e5f23502cc17ddebb25e2d
+    family: Capability
+    kind: skill
+    status: experimental
+    tier: shared
+    scope: common-seed
+    schema_version: 3
+    title: "session-reflection"
+    aliases: []
+    relations: []
+    provenance_sources: []
+  hydra://capability/skill/task-lifecycle:
+    uid: 4de6ce62-4f3b-4c8a-af4f-3cdbd129a659
+    path: .hydra-framework/capabilities/skills/task-lifecycle/metadata.yaml
+    digest: sha256:3fdf40557fb52949b352b74cab7ca4fcac1868def334a1781f33a00b5db50b5e
+    family: Capability
+    kind: skill
+    status: seed
+    tier: shared
+    scope: common-seed
+    schema_version: 3
+    title: "task-lifecycle"
+    aliases: []
+    relations: []
+    provenance_sources: []
+  hydra://capability/skill/task-state:
+    uid: 9d8cdafc-1bd4-4c53-8859-ca64c7414cae
+    path: .hydra-framework/capabilities/skills/task-state/metadata.yaml
+    digest: sha256:6f432f9bf439e32d5ce90b5dd809f3e1861b2160385ad50a42639fbd8870d048
+    family: Capability
+    kind: skill
+    status: seed
+    tier: shared
+    scope: common-seed
+    schema_version: 3
+    title: "task-state"
+    aliases: []
+    relations: []
+    provenance_sources: []
+  hydra://capability/skill/telemetry-evidence-absorb:
+    uid: 7efb8ff1-3072-40a4-9162-47a292a2750b
+    path: .hydra-framework/capabilities/skills/telemetry-evidence-absorb/metadata.yaml
+    digest: sha256:3b990a7cdac62330586668860d129a341f939358b7a1c32f6a66be4bcbf7e754
+    family: Capability
+    kind: skill
+    status: experimental
+    tier: shared
+    scope: common-seed
+    schema_version: 3
+    title: "telemetry-evidence-absorb"
+    aliases: []
+    relations:
+      - hydra://capability/skill/reflection-absorb
+    provenance_sources: []
+  hydra://capability/skill/wiki-authoring:
+    uid: a76ccc61-44e6-4beb-bd58-bc285659692b
+    path: .hydra-framework/capabilities/skills/wiki-authoring/metadata.yaml
+    digest: sha256:415b655f624189fbd622203a5b59ae964c95c387c2281f2aa1e4773dd1b61602
+    family: Capability
+    kind: skill
+    status: seed
+    tier: shared
+    scope: common-seed
+    schema_version: 3
+    title: "wiki-authoring"
+    aliases: []
+    relations: []
+    provenance_sources:
+      - .hydra-framework/surfaces/README.md
+      - project-wiki/hydra-framework/reference/documentation-authoring.md
+  hydra://capability/tool/capability-registry:
+    uid: dca93e19-9f13-4d93-b04b-ca1aec825d44
+    path: .hydra-framework/capabilities/tools/capabilities.yaml
+    digest: sha256:24818456752a22cbbbc5dd854fdd8fadf854848eb34539841301ae4e86a2590b
+    family: Capability
+    kind: tool-capability-registry
+    status: active
+    tier: shared
+    scope: common-seed
+    schema_version: 3
+    title: "Hydra Tool Capability Registry"
+    aliases: []
+    relations: []
+    provenance_sources:
+      - .hydra-framework/core/architecture.md
+  hydra://capability/workflow/material-migration:
+    uid: 821d266e-30ed-48ef-8e96-f574a88b4ef1
+    path: .hydra-framework/capabilities/workflows/material-migration.md
+    digest: sha256:b4ccc0aad97cf6cedc25597538cdb9dc1040b0e2e16be771462522e96a607f90
+    family: Capability
+    kind: workflow
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Transferred Material Migration"
+    aliases: []
+    relations:
+      - hydra://migration-ledger/intake-migrations
+    provenance_sources:
+      - .hydra-framework/repo/knowledge/intake-lifecycle.md
+      - .hydra-framework/core/placement-rules.md
+  hydra://capability/workflow/task-lifecycle:
+    uid: a91b62c7-b94a-4b8f-b8ba-8cb3bcbbd533
+    path: .hydra-framework/capabilities/workflows/task-lifecycle.md
+    digest: sha256:1c35730d9c438c2508d2d9a91cbefa268d02c862ac6188b40a307acf87cee672
+    family: Capability
+    kind: workflow
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Task Lifecycle Workflow"
+    aliases: []
+    relations: []
+    provenance_sources:
+      - .hydra-framework/core/placement-rules.md
+      - .hydra-framework/repo/knowledge/state-tiers.md
+  hydra://engine-module/object-family-registry:
+    uid: 1eb7694e-2810-4fbf-a0f2-f4f4f2ee284a
+    path: .hydra-framework/engine/src/hydra_engine/identity/object_families.py
+    digest: sha256:44c1e577ec377d03e7cd9e3288de107d03b405fbd069c29c3a025ace57d3935d
+    family: Runtime/Engine
+    kind: engine-module
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Object Family Registry"
+    aliases: []
+    relations:
+      - hydra://engine-module/object-handler-registry
+    provenance_sources:
+      - .hydra-framework/core/architecture.md
+  hydra://engine-module/object-handler-registry:
+    uid: 01d1a598-c313-445e-a594-e8330c58a537
+    path: .hydra-framework/engine/src/hydra_engine/objects/object_handlers.py
+    digest: sha256:2a2173adef2301d74e077861a5466bd14cc7540c7f4fa4e5e04e26ec9566399f
+    family: Runtime/Engine
+    kind: engine-module
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Object Handler Registry"
+    aliases: []
+    relations:
+      - hydra://engine-module/object-family-registry
+    provenance_sources:
+      - .hydra-framework/core/architecture.md
+  hydra://engine-module/validator-registry:
+    uid: 031b520a-a7b1-41b3-bc3b-f2cd5291d01c
+    path: .hydra-framework/engine/src/hydra_engine/checks/validator_registry.py
+    digest: sha256:ee38bacb753630dc82e0914a8aaacfd0c3801d68b9b4c7ee96ee306a14e68d63
+    family: Runtime/Engine
+    kind: engine-module
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Validator Registry"
+    aliases: []
+    relations:
+      - hydra://engine-module/object-family-registry
+      - hydra://engine-module/object-handler-registry
+    provenance_sources:
+      - .hydra-framework/core/architecture.md
+  hydra://integration-ledger/base-seed-adaptations:
+    uid: afdd5280-5d09-48cd-a6ae-dc6c0d80d6c3
+    path: .hydra-framework/evolution/adaptations.md
+    digest: sha256:3006e610c6c50f52b0843e5e41eb2955d9e7c9a03248fd0595e9f8344f6e828d
+    family: Source
+    kind: integration-ledger
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Adaptations Ledger"
+    aliases: []
+    relations: []
+    provenance_sources:
+      - .hydra-framework/scripts/hydra.py
+  hydra://knowledge-package/hydra-framework:
+    uid: e86b49f5-8055-4aeb-a001-084148d578bc
+    path: .hydra-framework/repo/knowledge/knowledge-packages/hydra-framework/overview.md
+    digest: sha256:817dca83ce8ecb3f7dbc5ec66aa1c43ed9cb5aa1b7c9a5db6e8ca41df84e1e39
+    family: Knowledge
+    kind: knowledge-package
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Hydra Framework Itself"
+    aliases: []
+    relations: []
+    provenance_sources:
+      - .hydra-framework/scripts/hydra.py
+      - .hydra-framework/engine/src/hydra_engine/
+      - .hydra-framework/engine/tests/
+  hydra://knowledge-slice/hydra-framework/architecture-graph:
+    uid: bfb8c8c7-17f9-4183-93d4-325de2b9232b
+    path: .hydra-framework/repo/knowledge/knowledge-packages/hydra-framework/architecture/00-graph.md
+    digest: sha256:97bb29364787eeeb4bbe77af0495cde72ee7304409114d7ebf0c9723bbf02406
+    family: Knowledge
+    kind: knowledge-slice
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Hydra Framework Architecture Graph"
+    aliases: []
+    relations:
+      - hydra://knowledge-package/hydra-framework
+    provenance_sources:
+      - .hydra-framework/scripts/hydra.py
+  hydra://knowledge-slice/hydra-framework/definition-of-done:
+    uid: 5dce06f1-1d9f-4911-ba35-cfbad747da1f
+    path: .hydra-framework/repo/knowledge/knowledge-packages/hydra-framework/definition-of-done.md
+    digest: sha256:903a596842f2d0aa9fc3eec9c03c85b04aae9c977af8ba4d86ebfd352187c1a9
+    family: Knowledge
+    kind: knowledge-slice
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Hydra Framework Definition Of Done"
+    aliases: []
+    relations:
+      - hydra://knowledge-package/hydra-framework
+    provenance_sources: []
+  hydra://knowledge-slice/hydra-framework/glossary:
+    uid: 95311d29-a3ca-4ea4-b2c9-b9b3be46f55b
+    path: .hydra-framework/repo/knowledge/knowledge-packages/hydra-framework/glossary.md
+    digest: sha256:25ec4f94dd01f5d6475853f10ff1afd2a420c28fe7a1fc2635fdc5c7eb81331b
+    family: Knowledge
+    kind: knowledge-slice
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Hydra Framework Glossary"
+    aliases: []
+    relations:
+      - hydra://knowledge-package/hydra-framework
+    provenance_sources: []
+  hydra://knowledge-slice/hydra-framework/problems:
+    uid: 3b5cdad3-e87f-4af2-b8c6-c5353c7a6d6e
+    path: .hydra-framework/repo/knowledge/knowledge-packages/hydra-framework/problems.md
+    digest: sha256:2fce62b1d07671f951d509e3d697628c80d8e1a6b4d840acf4980f86cf77366e
+    family: Knowledge
+    kind: knowledge-slice
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Hydra Framework Problems"
+    aliases: []
+    relations:
+      - hydra://knowledge-package/hydra-framework
+    provenance_sources: []
+  hydra://knowledge-slice/hydra-framework/provider-export-example:
+    uid: 9b4eb99d-439c-407e-84cc-22ef767dbefd
+    path: .hydra-framework/repo/knowledge/knowledge-packages/hydra-framework/architecture/01-example.md
+    digest: sha256:6bfa9d64a74f6d197162fcff1849487f2c0a29fa7ac1fabdd51969c6fcd8b32e
+    family: Knowledge
+    kind: knowledge-slice
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Provider Export Example"
+    aliases: []
+    relations:
+      - hydra://capability/agent/orchestrator
+      - hydra://knowledge-package/hydra-framework
+    provenance_sources:
+      - .hydra-framework/scripts/hydra.py
+      - .hydra-framework/adapters/providers/claude/capability-map.yaml
+  hydra://knowledge-slice/hydra-framework/routing:
+    uid: d732d9ce-e807-4858-8888-8f541e6c486b
+    path: .hydra-framework/repo/knowledge/knowledge-packages/hydra-framework/routing.yaml
+    digest: sha256:c42cc9fc57c3c5e47d122e8b80fcb829063ba7a1341274b00e7662bc67b027ee
+    family: Knowledge
+    kind: knowledge-slice
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Hydra Framework Itself"
+    aliases: []
+    relations:
+      - hydra://knowledge-package/hydra-framework
+    provenance_sources: []
+  hydra://knowledge-slice/hydra-framework/sources:
+    uid: 318d1be3-bf03-4901-99c9-a2896d8bd0bc
+    path: .hydra-framework/repo/knowledge/knowledge-packages/hydra-framework/sources.md
+    digest: sha256:04d7072d63766ab199060025f4de0284fb233191695bbd93b2844fdaa421e9f8
+    family: Knowledge
+    kind: knowledge-slice
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Hydra Framework Sources"
+    aliases: []
+    relations:
+      - hydra://knowledge-package/hydra-framework
+    provenance_sources: []
+  hydra://knowledge-slice/hydra-framework/state:
+    uid: d67d16a2-0504-44a5-a1f9-5c6d435c355a
+    path: .hydra-framework/repo/knowledge/knowledge-packages/hydra-framework/state.md
+    digest: sha256:d5589b6f980f3f4a81b2c4aec839847e026ddaf0130f2e35c959c786467c178b
+    family: Knowledge
+    kind: knowledge-slice
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Hydra Framework Itself State"
+    aliases: []
+    relations:
+      - hydra://knowledge-package/hydra-framework
+    provenance_sources:
+      - .hydra-framework/core/placement-rules.md
+      - .hydra-framework/engine/src/hydra_engine/identity/path_owners.py
+      - .hydra-framework/scripts/hydra.py
+  hydra://knowledge-template/package/architecture-example:
+    uid: 5447f8f8-f5b2-4315-8b4d-d0c4f9f6be93
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/architecture/01-example.md
+    digest: sha256:88c0685331bbadb1d00d629c56e376c58c1518813b823016efda30b2f47ef3d9
+    family: Knowledge
+    kind: knowledge-template
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Knowledge Package Architecture Example Template"
+    aliases: []
+    envelope_path: .hydra-framework/repo/object-sidecars.yaml
+    relations: []
+    provenance_sources: []
+  hydra://knowledge-template/package/architecture-graph:
+    uid: 879c98a6-fdc6-4a9c-b263-d82a16a5430d
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/architecture/00-graph.md
+    digest: sha256:4908bab6e5240e1c9982331a3faaba011c92919ff732494b9e25fa49e11a484a
+    family: Knowledge
+    kind: knowledge-template
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Knowledge Package Architecture Graph Template"
+    aliases: []
+    envelope_path: .hydra-framework/repo/object-sidecars.yaml
+    relations: []
+    provenance_sources: []
+  hydra://knowledge-template/package/check-script:
+    uid: 16832a4c-aa19-4262-a282-f6c8fe9655be
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/scripts/check.sh
+    digest: sha256:060e580e3b6a710a4f2028fad351b42f11ca370e24a4bd5f39c5fbbfa1705e4a
+    family: Knowledge
+    kind: knowledge-template
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Knowledge Package Check Script Template"
+    aliases: []
+    envelope_path: .hydra-framework/repo/object-sidecars.yaml
+    relations: []
+    provenance_sources: []
+  hydra://knowledge-template/package/definition-of-done:
+    uid: da8c5a95-5537-4d34-b766-afa5f045236f
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/definition-of-done.md
+    digest: sha256:e0efbf071bc56282cf0f44488c7973ff5fc602d242dd33c4702d8617f860db28
+    family: Knowledge
+    kind: knowledge-template
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Knowledge Package Definition Of Done Template"
+    aliases: []
+    envelope_path: .hydra-framework/repo/object-sidecars.yaml
+    relations: []
+    provenance_sources: []
+  hydra://knowledge-template/package/glossary:
+    uid: 9294188c-b0f7-4d1b-a2d1-dbfe7695f851
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/glossary.md
+    digest: sha256:bbb8c993db75afc88deca55aed6cbf6855cd3a38c731cf0d29d517867d35b295
+    family: Knowledge
+    kind: knowledge-template
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Knowledge Package Glossary Template"
+    aliases: []
+    envelope_path: .hydra-framework/repo/object-sidecars.yaml
+    relations: []
+    provenance_sources: []
+  hydra://knowledge-template/package/overview:
+    uid: fc80270e-c601-4f68-a3ed-f3d9e386b9db
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/overview.md
+    digest: sha256:afcf9f11f1c7de1a3c2d1dbee6ed9deebff2567e8cfa2e25aa949fa984d72f4e
+    family: Knowledge
+    kind: knowledge-template
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Knowledge Package Overview Template"
+    aliases: []
+    envelope_path: .hydra-framework/repo/object-sidecars.yaml
+    relations: []
+    provenance_sources: []
+  hydra://knowledge-template/package/problems:
+    uid: 2ad87a96-2725-49e3-aec2-fd90d1ac93c5
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/problems.md
+    digest: sha256:1a13b8f192f39afec7799ce7a611f4befd19240250a7deb6c78fc6ad02b14ab8
+    family: Knowledge
+    kind: knowledge-template
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Knowledge Package Problems Template"
+    aliases: []
+    envelope_path: .hydra-framework/repo/object-sidecars.yaml
+    relations: []
+    provenance_sources: []
+  hydra://knowledge-template/package/questions:
+    uid: 7f8cb5ca-26d1-49a3-9d7f-1b7673800e75
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/questions.md
+    digest: sha256:53e1f4ccd91bb762f7b4727b6ee72f75085c2200c094f9c5b2fcecb0d57615a4
+    family: Knowledge
+    kind: knowledge-template
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Knowledge Package Questions Template"
+    aliases: []
+    envelope_path: .hydra-framework/repo/object-sidecars.yaml
+    relations: []
+    provenance_sources: []
+  hydra://knowledge-template/package/readme:
+    uid: 954f110f-31cd-4024-a9cd-68c2ba544fc3
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/README.md
+    digest: sha256:10a4cd33ef3d5a69dc602f7fddf8663ea1e1bcc0ee809dd95355b2ea45760014
+    family: Knowledge
+    kind: knowledge-template
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Knowledge Package Template Index"
+    aliases:
+      - hydra://knowledge-template/package/index
+    envelope_path: .hydra-framework/repo/object-sidecars.yaml
+    relations: []
+    provenance_sources: []
+  hydra://knowledge-template/package/routing:
+    uid: 7db2bdec-1023-4127-b601-ca1fc7149ce4
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/routing.yaml
+    digest: sha256:d15265b54cb5155b9300507b45de84a38de3efb1cef2b71ae4112f405e99206c
+    family: Knowledge
+    kind: knowledge-template
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Knowledge Package Routing Template"
+    aliases: []
+    envelope_path: .hydra-framework/repo/object-sidecars.yaml
+    relations: []
+    provenance_sources: []
+  hydra://knowledge-template/package/sources:
+    uid: cd61034a-a504-49f2-9bdd-2e2c05601457
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/sources.md
+    digest: sha256:f4c8b4cc00d16f37cc29700174bc46b3d740d952672d37f95b63f4d2c1407ab6
+    family: Knowledge
+    kind: knowledge-template
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Knowledge Package Sources Template"
+    aliases: []
+    envelope_path: .hydra-framework/repo/object-sidecars.yaml
+    relations: []
+    provenance_sources: []
+  hydra://knowledge-template/package/state:
+    uid: 6b07c738-8f8f-4573-a2fb-74fea04e3ebc
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/state.md
+    digest: sha256:e8ce42859a08d96e1c63f32a7dc4c94e917e0a1da102160fc686ca272baa4780
+    family: Knowledge
+    kind: knowledge-template
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Knowledge Package State Template"
+    aliases: []
+    envelope_path: .hydra-framework/repo/object-sidecars.yaml
+    relations: []
+    provenance_sources: []
+  hydra://knowledge-template/package/units-example:
+    uid: cde96ca9-d600-4256-903c-a065c98caf55
+    path: .hydra-framework/repo/knowledge/knowledge-packages/templates/units/example.md
+    digest: sha256:177e11e3e793ccfd12fa54b9a6a255d240e528b42991f14c6ba582831b792995
+    family: Knowledge
+    kind: knowledge-template
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Knowledge Package Units Example Template"
+    aliases: []
+    envelope_path: .hydra-framework/repo/object-sidecars.yaml
+    relations: []
+    provenance_sources: []
+  hydra://knowledge-unit/hydra-framework/add-module:
+    uid: 10219e6b-b5d9-43bc-9452-e77822d34184
+    path: .hydra-framework/repo/knowledge/knowledge-packages/hydra-framework/units/add-module.md
+    digest: sha256:fd35b92c6f608a64f9355415d641fe1314ab7ff03334619b9d0f18342643885b
+    family: Knowledge
+    kind: knowledge-unit
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Adding A Skill Or Subagent"
+    aliases: []
+    relations:
+      - hydra://capability/skill/knowledge-unit
+      - hydra://knowledge-package/hydra-framework
+    provenance_sources:
+      - .hydra-framework/capabilities/skills/knowledge-unit/metadata.yaml
+      - .hydra-framework/adapters/providers/claude/README.md
+      - .hydra-framework/engine/src/hydra_engine/providers/capabilities.py
+      - .hydra-framework/engine/src/hydra_engine/providers/adapter_plan.py
+  hydra://knowledge-unit/hydra-framework/adopt-into-repo:
+    uid: 24061c90-1f2c-496b-9bbf-6b7a8ddb1426
+    path: .hydra-framework/repo/knowledge/knowledge-packages/hydra-framework/units/adopt-into-repo.md
+    digest: sha256:623c94530c9c4ebae4bf59a678b9979d7e4b155055e18e9c9841f59bdef41d9c
+    family: Knowledge
+    kind: knowledge-unit
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Adopting Hydra Into A Repository"
+    aliases: []
+    relations:
+      - hydra://capability/skill/adoption
+      - hydra://knowledge-package/hydra-framework
+    provenance_sources:
+      - .hydra-framework/capabilities/skills/adoption/skill.md
+      - .hydra-framework/repo/knowledge/seed-reconciliation.md
+      - .hydra-framework/engine/src/hydra_engine/installation/adopt.py
+      - .hydra-framework/engine/src/hydra_engine/installation/host_detection.py
+  hydra://knowledge-unit/hydra-framework/agent-export-trace:
+    uid: 6261c72a-da1b-46f9-8474-dddc40b53430
+    path: .hydra-framework/repo/knowledge/knowledge-packages/hydra-framework/units/agent-export-trace.md
+    digest: sha256:478fa4e0d183659503887942ca588c19360eef26e78d7592242d30e8d7607e8a
+    family: Knowledge
+    kind: knowledge-unit
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Agent Export Trace"
+    aliases: []
+    relations:
+      - hydra://capability/agent/orchestrator
+      - hydra://knowledge-package/hydra-framework
+    provenance_sources:
+      - .hydra-framework/capabilities/agents/orchestrator/metadata.yaml
+      - .hydra-framework/adapters/providers/claude/capability-map.yaml
+      - .hydra-framework/engine/src/hydra_engine/providers/capabilities.py
+      - .hydra-framework/engine/src/hydra_engine/providers/reclaim.py
+  hydra://knowledge-unit/hydra-framework/build-status:
+    uid: b01fff6c-38ac-4bde-92c3-98890aac83bb
+    path: .hydra-framework/repo/knowledge/knowledge-packages/hydra-framework/units/build-status.md
+    digest: sha256:c13e0a9c5f17720007b095d354cd7df58f58160ace99f8b2a0f5482c6a3f8286
+    family: Knowledge
+    kind: knowledge-unit
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Hydra Framework Build Status"
+    aliases: []
+    relations:
+      - hydra://knowledge-package/hydra-framework
+    provenance_sources:
+      - .hydra-framework/scripts/hydra.py
+      - .hydra-framework/core/placement-rules.md
+      - .hydra-framework/repo/telemetry/README.md
+      - .hydra-framework/engine/src/hydra_engine/cli/command_metadata.py
+      - .hydra-framework/engine/src/hydra_engine/knowledge/context_providers.py
+  hydra://knowledge-unit/hydra-framework/change-task-contract:
+    uid: ef271cd9-2a76-4182-a180-5ee3d9f9d8aa
+    path: .hydra-framework/repo/knowledge/knowledge-packages/hydra-framework/units/change-task-contract.md
+    digest: sha256:88806e5a792a3cacce8b38a9868aee601840d8720004024e214d456a71327720
+    family: Knowledge
+    kind: knowledge-unit
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Changing The Task-Record Contract"
+    aliases: []
+    relations:
+      - hydra://capability/workflow/task-lifecycle
+      - hydra://knowledge-package/hydra-framework
+    provenance_sources:
+      - .hydra-framework/capabilities/workflows/task-lifecycle.md
+      - .hydra-framework/engine/src/hydra_engine/checks/task_contract_docs.py
+      - .hydra-framework/tasks/templates/task.md
+  hydra://knowledge-unit/hydra-framework/fix-provider-surface:
+    uid: dbde7a08-930b-4a00-a468-da79f87d2c9d
+    path: .hydra-framework/repo/knowledge/knowledge-packages/hydra-framework/units/fix-provider-surface.md
+    digest: sha256:1e518fd3ab0565044b7396d745d53a72e0b4131eb8cd6e7c79115300e4777ac6
+    family: Knowledge
+    kind: knowledge-unit
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Fixing An Orphaned Or Drifted Provider Surface"
+    aliases: []
+    relations:
+      - hydra://knowledge-package/hydra-framework
+    provenance_sources:
+      - .claude/rules/hydra-placement.md
+      - .hydra-framework/engine/src/hydra_engine/providers/reclaim.py
+  hydra://knowledge-unit/hydra-framework/reconcile-with-base:
+    uid: d6ac00af-f26f-4a46-b189-284c6e91a910
+    path: .hydra-framework/repo/knowledge/knowledge-packages/hydra-framework/units/reconcile-with-base.md
+    digest: sha256:ec26725973043dcdfae80c569220d6921bf176ded2b77c5e2cac6078b701dcbf
+    family: Knowledge
+    kind: knowledge-unit
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Reconciling A Copy Against Its Base Seed"
+    aliases: []
+    relations:
+      - hydra://capability/skill/seed-reconciliation
+      - hydra://knowledge-package/hydra-framework
+    provenance_sources:
+      - .hydra-framework/capabilities/skills/seed-reconciliation/skill.md
+      - .hydra-framework/repo/knowledge/seed-reconciliation.md
+      - .hydra-framework/engine/src/hydra_engine/commands/seed.py
+      - .hydra-framework/engine/src/hydra_engine/seed/fingerprints.py
+  hydra://migration-ledger/intake-migrations:
+    uid: 3c1cf7d8-e449-418d-b928-9e99f59fc9c5
+    path: .hydra-framework/intake/migrations/README.md
+    digest: sha256:8ab4a12072b6bd8b4d8250ed0a1b2b9e00efc1228531a211aac8ac54651907ce
+    family: Work
+    kind: migration-ledger
+    status: active
+    tier: shared
+    scope: base-seed
+    schema_version: 3
+    title: "Intake Migrations"
+    aliases: []
+    relations: []
+    provenance_sources:
+      - .hydra-framework/capabilities/workflows/material-migration.md

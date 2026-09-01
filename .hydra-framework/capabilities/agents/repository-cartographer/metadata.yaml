@@ -1,0 +1,29 @@
+schema: hydra-framework.agent.v2
+hydra_id: hydra://capability/agent/repository-cartographer
+uid: b6e0597f-38ca-4dcc-87e9-922e96d31717
+schema_version: 3
+hydra_object_kind: agent
+name: repository-cartographer
+description: Map an unfamiliar repository area and report verified structure, technologies, and conventions. Use for scoped discovery before planning, instead of broad scanning in the main session.
+scope: common-seed
+maturity: seed
+owners:
+  team: hydra
+capability_class: large-context
+effort: standard
+tools:
+  - Read
+  - Grep
+  - Glob
+  - Bash
+dependencies:
+  knowledge:
+    - repo/knowledge/architecture.md
+    - repo/knowledge/conventions.md
+    - repo/knowledge/certainty-model.md
+  skills:
+    - repository-inspection
+  workflows: []
+relations: []
+provenance:
+  sources: []

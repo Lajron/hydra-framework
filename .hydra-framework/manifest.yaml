@@ -1,0 +1,39 @@
+schema: hydra-framework.manifest.v1
+framework_name: hydra-framework
+seed_version: 0.1.0
+status: foundation-seed
+entry_point: ../AI_SYSTEM.md
+
+composition:
+  primary_physical_axis: responsibility
+  secondary_axis: execution_layer_metadata
+  shared_layer: .hydra-framework
+  private_layer_shape_doc: .hydra-framework/repo/knowledge/state-tiers.md
+  private_layer: .hydra-framework.local
+
+enabled_areas:
+  core: true
+  intake: true
+  repo_knowledge: true
+  tasks: true
+  agents: true
+  skills: true
+  workflows: true
+  tool_capabilities: true
+  provider_adapters: true
+  human_surfaces: true
+  cognition: true
+  engine: true
+  self_evolution: true
+  validation: true
+
+state_tiers:
+  shared: .hydra-framework
+  personal: .hydra-framework/tasks/personal
+  private: .hydra-framework.local
+
+current_task_discovery:
+  personal_directory: tasks/personal
+  owner_resolution: "HYDRA_OWNER, then git config user.email; unset is an error"
+  discovery_command: "hydra.py board"
+  policy: "Use a formal task only when persistence is useful. Completion removes the record; Git history is the archive."

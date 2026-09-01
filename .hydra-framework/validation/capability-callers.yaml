@@ -1,0 +1,89 @@
+schema: hydra-framework.capability-callers.v1
+mechanisms:
+  hook-token-pre-context:
+    command: hook-token pre-context
+    classification: manual
+    implementation:
+      .hydra-framework/engine/src/hydra_engine/commands/agent_hooks.py:
+        - def command_hook_token_pre_context
+        - pre_context.set_defaults(func=_dispatch_hook_token_pre_context)
+    callers:
+      .hydra-framework/validation/README.md:
+        - Use `hydra.py hook-token pre-context --budget <tokens>`
+
+  hook-token-command-result:
+    command: hook-token command-result
+    classification: manual
+    implementation:
+      .hydra-framework/engine/src/hydra_engine/commands/agent_hooks.py:
+        - def command_hook_token_command_result
+        - command_result.set_defaults(func=_dispatch_hook_token_command_result)
+    callers:
+      .hydra-framework/validation/README.md:
+        - Use `hydra.py hook-token command-result` around noisy or repeated validation
+
+  summarize-log:
+    command: summarize-log
+    classification: manual
+    implementation:
+      .hydra-framework/engine/src/hydra_engine/commands/agent_hooks.py:
+        - def command_summarize_log
+        - log.set_defaults(func=_dispatch_summarize_log)
+    callers:
+      .hydra-framework/validation/README.md:
+        - The lower-level `summarize-log` and
+
+  retry-guard:
+    command: retry-guard
+    classification: manual
+    implementation:
+      .hydra-framework/engine/src/hydra_engine/commands/agent_hooks.py:
+        - def command_retry_guard
+        - retry.set_defaults(func=_dispatch_retry_guard)
+    callers:
+      .hydra-framework/validation/README.md:
+        - `retry-guard` commands remain available for manual or custom wrappers.
+
+  hook-command-output:
+    command: hook-command-output
+    classification: automatic
+    implementation:
+      .hydra-framework/engine/src/hydra_engine/commands/agent_hooks.py:
+        - def command_hook_command_output
+        - command_output.set_defaults(func=_dispatch_hook_command_output)
+    callers:
+      .claude/settings.json:
+        - hook-command-output
+
+  hook-retry-guard:
+    command: hook-retry-guard
+    classification: automatic
+    implementation:
+      .hydra-framework/engine/src/hydra_engine/commands/agent_hooks.py:
+        - def command_hook_retry_guard
+        - retry_hook.set_defaults(func=_dispatch_hook_retry_guard)
+    callers:
+      .claude/settings.json:
+        - hook-retry-guard
+
+  hook-codex-command-output:
+    command: hook-codex-command-output
+    classification: automatic
+    implementation:
+      .hydra-framework/engine/src/hydra_engine/commands/agent_hooks.py:
+        - def command_hook_codex_command_output
+        - codex_command_output.set_defaults(func=_dispatch_hook_codex_command_output)
+    callers:
+      .codex/hooks.json:
+        - hook-codex-command-output
+
+  hook-codex-retry-guard:
+    command: hook-codex-retry-guard
+    classification: automatic
+    implementation:
+      .hydra-framework/engine/src/hydra_engine/commands/agent_hooks.py:
+        - def command_hook_codex_retry_guard
+        - codex_retry_hook.set_defaults(func=_dispatch_hook_codex_retry_guard)
+    callers:
+      .codex/hooks.json:
+        - hook-codex-retry-guard

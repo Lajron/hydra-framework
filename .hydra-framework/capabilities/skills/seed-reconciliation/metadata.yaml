@@ -1,0 +1,23 @@
+schema: hydra-framework.skill.v2
+hydra_id: hydra://capability/skill/seed-reconciliation
+uid: 00b83436-4c9d-4790-ae75-3fca55addfef
+schema_version: 3
+hydra_object_kind: skill
+kind: procedure
+name: seed-reconciliation
+description: Compare this repository's Hydra copy against its base seed and decide what should flow back. Use when reconciling a diverged .hydra-framework/, or deciding whether a local change belongs in the shared framework.
+scope: common-seed
+maturity: seed
+owners:
+  team: hydra
+provider_requirements:
+  - read_files
+  - edit_files
+  - run_local_commands
+dependencies:
+  knowledge:
+    - seed-reconciliation
+    - certainty-model
+relations: []
+provenance:
+  sources: []

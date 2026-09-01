@@ -1,0 +1,32 @@
+schema: hydra-framework.agent.v2
+hydra_id: hydra://capability/agent/task-steward
+uid: fff2a100-86c0-4849-a321-06af75a9d2ce
+schema_version: 3
+hydra_object_kind: agent
+name: task-steward
+description: Create, checkpoint, hand off, or complete a Hydra task record. Use when work needs persisted state, a handoff, or a recovery checkpoint.
+scope: common-seed
+maturity: seed
+owners:
+  team: hydra
+capability_class: fast-default
+effort: low
+tools:
+  - Read
+  - Write
+  - Edit
+  - Grep
+  - Glob
+  - Bash
+dependencies:
+  knowledge:
+    - repo/knowledge/task-step-state.md
+    - repo/knowledge/operational-readiness.md
+    - repo/knowledge/archive-and-supersession.md
+  skills:
+    - task-lifecycle
+  workflows:
+    - task-lifecycle
+relations: []
+provenance:
+  sources: []

@@ -1,0 +1,19 @@
+# Private developer and machine state. Never committed.
+.hydra-framework.local/
+
+# Provider-local and personal overrides.
+CLAUDE.local.md
+.claude/settings.local.json
+.codex-log/
+
+# Obsidian vault config is machine-local. Its role as a Hydra surface is
+# undecided (core/unresolved-questions.md), so no vault structure is committed.
+.obsidian/
+
+# Python bytecode and test caches from hydra.py.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Stray temp files from an interrupted hydra.py atomic write (documents/tokens.py).
+.*.hydra-tmp-*

@@ -1,0 +1,20 @@
+{
+  "exit_code": 0,
+  "manifest": {
+    ".cursorrules": "6c247923e21b51ae1c842ff7d2d8c5064946421c35d8f0d1d7f423d9e0528dc6",
+    ".hydra-framework/README.md": "0de5f42b131305a48c4775ac871045712943998891b583e4381784801df42f4b",
+    ".hydra-framework/adapters/providers/claude/capability-map.yaml": "b003af671c56a0420ad81e7ad9b88a94b6f78d330e086a7d8fd61f6e1b9e23b6",
+    ".hydra-framework/adapters/providers/codex/capability-map.yaml": "b7477930e8b873de520503637055733760efabf4afe99e83739eda30ea03b632",
+    ".hydra-framework/capabilities/agents/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".hydra-framework/capabilities/skills/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".hydra-framework/core/placement-rules.md": "5ccfd85befd6aa3ff7d5dd0fc1417b21ae5e3186839a360348c8b8ed51dfb60b",
+    ".hydra-framework/manifest.yaml": "bc74566ab21d13c108337058c3db644e60fd8036887039425542e79efcb73c93",
+    ".hydra-framework/tasks/personal/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".hydra-framework/tasks/templates/checkpoint.md": "25f014f86a8490b4c636b360b343e8d2a8cc818c68948a3d4d243d928b7c0d99",
+    ".hydra-framework/tasks/templates/task.md": "32dd805b125370ccb27117f3984a894c773d0685fcd378aa6cbce3da715dba10",
+    "AGENTS.md": "a52ae73fc0a471d277c57a8c65af99c0b3e814f984b2ead607c36d5115eb12bb",
+    "AI_SYSTEM.md": "5a1cc2ad0944ad277aa08fe46d44c654ef5fa0256d6ca91925a2af23d6dfa5d6"
+  },
+  "stderr": "",
+  "stdout": "Hydra takeover scan\nRoot: .\nTotals: 2 candidate root(s), 2 file(s)\nNote: read-only scan; no files are staged, moved, promoted, or rewritten\nNote: confirm scope before moving any candidate root into migration staging\n\n- AGENTS.md (codex): foreign-entrypoint\n  files: 1, tracked: 0, untracked: 1, ignored: 0\n  intake tags: ai-prompt-or-rules: 1, provider-surface: 1\n  staging: private-staging\n  staging path: .hydra-framework.local/migrations/agents-md/originals/\n  reason: root AI rule file is not a thin Hydra adapter\n  - AGENTS.md: ai-prompt-or-rules, provider-surface\n\n- .cursorrules (cursor): foreign-entrypoint\n  files: 1, tracked: 0, untracked: 1, ignored: 0\n  intake tags: source-material: 1\n  staging: private-staging\n  staging path: .hydra-framework.local/migrations/cursorrules/originals/\n  reason: foreign AI instruction or documentation marker\n  - .cursorrules: source-material\n"
+}

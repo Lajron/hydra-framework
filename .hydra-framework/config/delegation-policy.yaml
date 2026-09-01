@@ -1,0 +1,47 @@
+schema: hydra-framework.delegation-policy.v1
+enabled: true
+max_active_workers: 2
+max_depth: 1
+allowed_reasons:
+  - inspection
+  - implementation-support
+  - review
+  - validation
+  - summarization
+role_defaults:
+  allowed_capability_classes:
+    - fast-default
+    - cheap-triage
+    - deep-reasoning
+    - large-context
+    - tool-heavy
+    - review-focused
+    - local-private
+  fallback_capability_class: fast-default
+  effort_ceiling: max
+roles:
+  framework-evolution:
+    allowed_capability_classes:
+      - review-focused
+    fallback_capability_class: review-focused
+    effort_ceiling: high
+  orchestrator:
+    allowed_capability_classes:
+      - deep-reasoning
+    fallback_capability_class: deep-reasoning
+    effort_ceiling: standard
+  repo-adoption:
+    allowed_capability_classes:
+      - deep-reasoning
+    fallback_capability_class: deep-reasoning
+    effort_ceiling: standard
+  repository-cartographer:
+    allowed_capability_classes:
+      - large-context
+    fallback_capability_class: large-context
+    effort_ceiling: standard
+  task-steward:
+    allowed_capability_classes:
+      - fast-default
+    fallback_capability_class: fast-default
+    effort_ceiling: low

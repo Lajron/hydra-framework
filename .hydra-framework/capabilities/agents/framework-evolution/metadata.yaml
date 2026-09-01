@@ -1,0 +1,32 @@
+schema: hydra-framework.agent.v2
+hydra_id: hydra://capability/agent/framework-evolution
+uid: 04c96296-f8d5-460f-87a3-e76c6d68c356
+schema_version: 3
+hydra_object_kind: agent
+name: framework-evolution
+description: Evaluate whether a repository-local Hydra change should be promoted into the reusable seed, and record the evidence. Use after a Hydra adaptation proves useful, or when reconciling a diverged copy against the base framework.
+scope: common-seed
+maturity: seed
+owners:
+  team: hydra
+capability_class: review-focused
+effort: high
+tools:
+  - Read
+  - Write
+  - Edit
+  - Grep
+  - Glob
+  - Bash
+dependencies:
+  knowledge:
+    - repo/knowledge/seed-reconciliation.md
+    - repo/knowledge/certainty-model.md
+    - core/ownership-and-composition.md
+  skills:
+    - seed-reconciliation
+    - complexity-review
+  workflows: []
+relations: []
+provenance:
+  sources: []

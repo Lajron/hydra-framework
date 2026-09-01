@@ -1,0 +1,21 @@
+{
+  "exit_code": 0,
+  "manifest": {
+    ".hydra-framework/README.md": "0de5f42b131305a48c4775ac871045712943998891b583e4381784801df42f4b",
+    ".hydra-framework/adapters/providers/claude/capability-map.yaml": "b003af671c56a0420ad81e7ad9b88a94b6f78d330e086a7d8fd61f6e1b9e23b6",
+    ".hydra-framework/adapters/providers/codex/capability-map.yaml": "b7477930e8b873de520503637055733760efabf4afe99e83739eda30ea03b632",
+    ".hydra-framework/capabilities/agents/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".hydra-framework/capabilities/skills/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".hydra-framework/core/placement-rules.md": "5ccfd85befd6aa3ff7d5dd0fc1417b21ae5e3186839a360348c8b8ed51dfb60b",
+    ".hydra-framework/manifest.yaml": "bc74566ab21d13c108337058c3db644e60fd8036887039425542e79efcb73c93",
+    ".hydra-framework/tasks/personal/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".hydra-framework/tasks/templates/checkpoint.md": "25f014f86a8490b4c636b360b343e8d2a8cc818c68948a3d4d243d928b7c0d99",
+    ".hydra-framework/tasks/templates/task.md": "32dd805b125370ccb27117f3984a894c773d0685fcd378aa6cbce3da715dba10",
+    ".migrations/source-a/.hydra-framework/manifest.yaml": "aea30fdefa398f8dbe15d215a2454585b9b42027bc4d3190eadc6efe2f15d2eb",
+    "AGENTS.md": "a52ae73fc0a471d277c57a8c65af99c0b3e814f984b2ead607c36d5115eb12bb",
+    "AI_SYSTEM.md": "5a1cc2ad0944ad277aa08fe46d44c654ef5fa0256d6ca91925a2af23d6dfa5d6",
+    ".migrations/source-a/.hydra-framework/repo/knowledge-units/0001-source.md": "4ab1885c196cdc3b6e2d32eb86cc62568ad93e6a3f3f10e25a87dba9029969bc"
+  },
+  "stderr": "",
+  "stdout": "Hydra source integration scan\nSlug: source-a\nSource: .migrations/source-a\nHydra source: found\nProject: source-a\nSeed version: 0.1.0\nObjects: 1 total, 0 capability object(s), 0 knowledge package(s)\nCollisions: 0 id, 0 path\nPlanned workspace: .hydra-framework/intake/integrations/2026-01-01-source-a\nNote: read-only scan; staged source material and source Hydra tree are not modified\nNote: source integration rows are object/capability decisions, not migration file-drain rows\nNote: read-only inventory; staged material is source material, not canonical Hydra state\nNote: keep private or never-tracked material under .hydra-framework.local/migrations/<slug>/originals/\n"
+}

@@ -1,0 +1,29 @@
+schema: hydra-framework.engine-policy.v1
+thresholds:
+  hydra_engine.agent_hooks.retry_state.RETRY_STATE_GROWTH_ADVISORY_LINES: 5000
+  hydra_engine.agent_hooks.subagent_context.SUBAGENT_CONTEXT_TOKEN_BUDGET: 350
+  hydra_engine.agent_hooks.token_budget.LARGE_LOG_CHARS_DEFAULT: 20000
+  hydra_engine.agent_hooks.token_budget.LARGE_LOG_LINES_DEFAULT: 120
+  hydra_engine.agent_hooks.token_budget.RETRY_MAX_ATTEMPTS_DEFAULT: 2
+  hydra_engine.agent_hooks.token_budget.SUMMARY_MAX_LINES_DEFAULT: 80
+  hydra_engine.knowledge.candidates.APPROX_CHARS_PER_TOKEN: 4
+  hydra_engine.knowledge.context_packets.DEFAULT_CONTEXT_BUDGET: 12000
+  hydra_engine.knowledge.context_providers.DEFAULT_FAMILY_CANDIDATE_CAP: 8
+  hydra_engine.knowledge.context_providers.PROVIDER_SEARCH_RESULT_LIMIT: 200
+  hydra_engine.knowledge.package_checks.PACKAGE_FILE_FAIL_TOKENS: 8000
+  hydra_engine.knowledge.routing.MAX_ROUTED_PACKAGES: 3
+  hydra_engine.knowledge.search_index.DEFAULT_BUDGET: 2000
+  hydra_engine.knowledge.search_index.DEFAULT_PREVIEW_CHARS: 280
+  hydra_engine.knowledge.search_index.DEFAULT_RESULT_LIMIT: 20
+  hydra_engine.telemetry.evidence.STALE_OPEN_TELEMETRY_EVIDENCE_DAYS: 30
+  hydra_engine.telemetry.evidence.TELEMETRY_EVIDENCE_PACKAGE_FAIL_TOKENS: 3000
+  hydra_engine.telemetry.evidence.TELEMETRY_EVIDENCE_QUEUE_DEPTH_NOTE: 10
+  hydra_engine.telemetry.gate.GATE_MAX_SPILLOVER_PER_1000: 50
+  hydra_engine.telemetry.gate.GATE_MIN_EVENT_COUNT: 3
+  hydra_engine.telemetry.gate.GATE_MIN_EVENT_KINDS: 3
+  hydra_engine.telemetry.writer.TELEMETRY_EVENTS_GROWTH_ADVISORY_LINES: 5000
+  hydra_engine.seed.candidate_queue.STALE_PROPOSED_CANDIDATE_DAYS: 30
+  hydra_engine.seed.reflections.REFLECTION_PACKET_FAIL_TOKENS: 1200
+  hydra_engine.seed.reflections.REFLECTION_QUEUE_DEPTH_NOTE: 20
+  hydra_engine.seed.reflections.STALE_REFLECTION_DAYS: 30
+  hydra_engine.work.task_records.STALE_TASK_DAYS: 14

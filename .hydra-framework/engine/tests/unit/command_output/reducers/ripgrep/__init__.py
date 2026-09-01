@@ -1,0 +1,2 @@
+"""Ripgrep reducer tests."""
+

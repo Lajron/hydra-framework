@@ -1,0 +1,26 @@
+schema: hydra-framework.skill.v2
+hydra_id: hydra://capability/skill/telemetry-evidence-absorb
+uid: 7efb8ff1-3072-40a4-9162-47a292a2750b
+schema_version: 3
+hydra_object_kind: skill
+kind: procedure
+name: telemetry-evidence-absorb
+description: List open telemetry evidence packages, read only those in scope, propose an outcome for each, and drain approved ones into durable state or a terminal status.
+scope: common-seed
+maturity: experimental
+owners:
+  team: hydra
+provider_requirements:
+  - read_files
+  - edit_files
+  - run_local_commands
+dependencies:
+  knowledge:
+    - state-tiers
+    - telemetry-redaction-contract
+  workflows:
+    - task-lifecycle
+relations:
+  - hydra://capability/skill/reflection-absorb
+provenance:
+  sources: []

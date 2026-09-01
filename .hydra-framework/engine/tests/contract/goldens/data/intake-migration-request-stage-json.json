@@ -1,0 +1,21 @@
+{
+  "exit_code": 0,
+  "manifest": {
+    ".hydra-framework/README.md": "0de5f42b131305a48c4775ac871045712943998891b583e4381784801df42f4b",
+    ".hydra-framework/adapters/providers/claude/capability-map.yaml": "b003af671c56a0420ad81e7ad9b88a94b6f78d330e086a7d8fd61f6e1b9e23b6",
+    ".hydra-framework/adapters/providers/codex/capability-map.yaml": "b7477930e8b873de520503637055733760efabf4afe99e83739eda30ea03b632",
+    ".hydra-framework/capabilities/agents/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".hydra-framework/capabilities/skills/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".hydra-framework/core/placement-rules.md": "5ccfd85befd6aa3ff7d5dd0fc1417b21ae5e3186839a360348c8b8ed51dfb60b",
+    ".hydra-framework/intake/migrations/2026-01-01-demo-slug/batches/package-batch/state.json": "8d479f78e2f25189073cb98d2bdf6bd9d83c3698e59a9ccad381de96d136eea4",
+    ".hydra-framework/manifest.yaml": "bc74566ab21d13c108337058c3db644e60fd8036887039425542e79efcb73c93",
+    ".hydra-framework/tasks/personal/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".hydra-framework/tasks/templates/checkpoint.md": "25f014f86a8490b4c636b360b343e8d2a8cc818c68948a3d4d243d928b7c0d99",
+    ".hydra-framework/tasks/templates/task.md": "32dd805b125370ccb27117f3984a894c773d0685fcd378aa6cbce3da715dba10",
+    "AGENTS.md": "a52ae73fc0a471d277c57a8c65af99c0b3e814f984b2ead607c36d5115eb12bb",
+    "AI_SYSTEM.md": "5a1cc2ad0944ad277aa08fe46d44c654ef5fa0256d6ca91925a2af23d6dfa5d6",
+    "incoming/file.md": "b2c70bba7bf0ef43959341e03b923efd23fed1a0b3ed1895736736d88a5b39b0"
+  },
+  "stderr": "",
+  "stdout": "{\n  \"schema\": \"hydra-framework.migration-approval.v1\",\n  \"slug\": \"demo-slug\",\n  \"batch\": \"package-batch\",\n  \"workspace\": \".hydra-framework/intake/migrations/2026-01-01-demo-slug\",\n  \"revision\": 0,\n  \"phase\": \"awaiting-staging-approval\",\n  \"capability_class\": \"tool-heavy\",\n  \"drafting_chain\": [\n    {\n      \"instance\": \"drafter-1\",\n      \"capability_class\": \"tool-heavy\"\n    }\n  ],\n  \"source_items\": [\n    {\n      \"source_path\": \"incoming\",\n      \"source_digest\": \"0054264895b4218f2e708b64c38c8e334c203759432e49c19ac7f624178d40df\",\n      \"route\": \"shared\",\n      \"planned_staged_path\": \".migrations/demo-slug/incoming\",\n      \"git\": {\n        \"status\": \"unknown\",\n        \"tracked_files\": [],\n        \"ignore_match\": \"\",\n        \"status_entries\": []\n      },\n      \"files\": 1,\n      \"bytes\": 17,\n      \"classifications\": [\n        \"source-material\"\n      ],\n      \"findings\": [\n        {\n          \"path\": \"incoming/file.md\",\n          \"bytes\": 17,\n          \"classifications\": [\n            \"source-material\"\n          ]\n        }\n      ]\n    }\n  ],\n  \"proposal\": null,\n  \"validation\": null,\n  \"reconciliation\": null,\n  \"used_validator_instances\": [],\n  \"current_approval\": {\n    \"kind\": \"staging\",\n    \"status\": \"pending\",\n    \"revision\": 0,\n    \"reasons\": [\n      \"staging-move\",\n      \"ambiguous-classification\",\n      \"ambiguous-git-status\"\n    ],\n    \"action\": {\n      \"moves\": [\n        {\n          \"source_path\": \"incoming\",\n          \"source_digest\": \"0054264895b4218f2e708b64c38c8e334c203759432e49c19ac7f624178d40df\",\n          \"destination_path\": \".migrations/demo-slug/incoming\",\n          \"route\": \"shared\",\n          \"git\": {\n            \"status\": \"unknown\",\n            \"tracked_files\": [],\n            \"ignore_match\": \"\",\n            \"status_entries\": []\n          }\n        }\n      ]\n    }\n  },\n  \"history\": []\n}\n"
+}

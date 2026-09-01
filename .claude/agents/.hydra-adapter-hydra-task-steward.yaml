@@ -1,0 +1,5 @@
+schema: hydra-framework.adapter.v2
+provider: claude
+kind: agent
+canonical_source: .hydra-framework/capabilities/agents/task-steward/agent.md
+generated_file: hydra-task-steward.md

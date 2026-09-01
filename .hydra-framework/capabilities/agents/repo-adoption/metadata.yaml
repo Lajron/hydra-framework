@@ -1,0 +1,31 @@
+schema: hydra-framework.agent.v2
+hydra_id: hydra://capability/agent/repo-adoption
+uid: c5b6ea18-1325-4e4c-a11c-b1abf4d3c56e
+schema_version: 3
+hydra_object_kind: agent
+name: repo-adoption
+description: Wire a freshly copied Hydra into a host repository and report what was integrated. Use when .hydra-framework/ exists but is unwired, or when asked to set up or integrate Hydra in this repository.
+scope: common-seed
+maturity: seed
+owners:
+  team: hydra
+capability_class: deep-reasoning
+effort: standard
+tools:
+  - Read
+  - Write
+  - Edit
+  - Grep
+  - Glob
+  - Bash
+dependencies:
+  knowledge:
+    - core/placement-rules.md
+    - repo/knowledge/seed-reconciliation.md
+  skills:
+    - adoption
+    - repository-inspection
+  workflows: []
+relations: []
+provenance:
+  sources: []

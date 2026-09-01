@@ -1,0 +1,23 @@
+schema: hydra-framework.skill.v2
+hydra_id: hydra://capability/skill/adoption
+uid: 8e424ab6-458a-405b-8db1-1639f1923430
+schema_version: 3
+hydra_object_kind: skill
+kind: procedure
+name: adoption
+description: Integrate Hydra into a repository it was just copied into. Use when .hydra-framework/ is present but unwired, or when asked to set Hydra up in this repo.
+scope: common-seed
+maturity: seed
+owners:
+  team: hydra
+provider_requirements:
+  - read_files
+  - edit_files
+  - run_local_commands
+dependencies:
+  knowledge:
+    - seed-reconciliation
+    - placement-rules
+relations: []
+provenance:
+  sources: []

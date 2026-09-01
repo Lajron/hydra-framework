@@ -1,0 +1,130 @@
+schema: hydra-framework.tool-capabilities.v1
+hydra_id: hydra://capability/tool/capability-registry
+uid: dca93e19-9f13-4d93-b04b-ca1aec825d44
+schema_version: 3
+kind: tool-capability-registry
+title: Hydra Tool Capability Registry
+status: active
+scope: common-seed
+owners:
+  team: hydra
+relations: []
+provenance:
+  sources:
+    - .hydra-framework/core/architecture.md
+capabilities:
+  repository_search:
+    description: Search repository files efficiently.
+    preferred_traits:
+      - fast
+      - local
+      - supports_globs
+    common_implementations:
+      linux:
+        preferred: rg
+        fallbacks:
+          - grep
+      macos:
+        preferred: rg
+        fallbacks:
+          - grep
+      windows:
+        preferred: rg
+        fallbacks:
+          - findstr
+  git_context:
+    description: Query branch, status, history, and changed files from Git.
+    source_of_truth: git
+  test_execution:
+    description: Run project validation commands.
+    source_of_truth: repository_configuration
+  model_routing:
+    description: Choose the smallest adequate capability class, context size, and effort budget for a task without hardcoding provider identity.
+    preferred_traits:
+      - provider_neutral
+      - capability_based
+      - cost_aware
+      - effort_aware
+    requirements:
+      - choose a capability class such as fast-default, cheap-triage, deep-reasoning, large-context, tool-heavy, review-focused, or local-private
+      - choose an effort budget such as minimal, low, standard, high, or max
+      - keep concrete provider, model, and reasoning-effort mappings in provider adapters or private local config
+      - raise effort only when task risk, ambiguity, validation failure, or context pressure justifies it
+  subagent_spawn:
+    description: Start a focused subagent or mini-agent with scoped context, bounded task instructions, and expected output criteria.
+    preferred_traits:
+      - scoped_context
+      - provider_neutral
+      - supports_fallback
+    requirements:
+      - define task boundary
+      - define relevant canonical sources
+      - define output shape
+      - avoid raw conversation dependence
+  subagent_message:
+    description: Send bounded follow-up instructions or clarifications to an active subagent.
+    preferred_traits:
+      - explicit_routing
+      - preserves_task_boundary
+    requirements:
+      - reference the active subagent identity
+      - keep messages scoped to the assigned task
+      - preserve consequential clarifications in task state when durable
+  subagent_collect:
+    description: Collect findings, validation evidence, or artifacts from subagents and fold durable results into canonical task state.
+    preferred_traits:
+      - structured_output
+      - supports_timeout
+      - supports_partial_results
+    requirements:
+      - distinguish findings from accepted rules and verified facts
+      - record validation evidence when used
+      - avoid storing raw subagent transcripts as memory
+  hook_policy:
+    description: Enforce deterministic, narrow hook policy or capture bounded lifecycle events.
+    preferred_traits:
+      - deterministic
+      - auditable
+      - quiet_on_success
+      - easy_to_disable
+    requirements:
+      - no broad reasoning
+      - no hidden canonical-state rewrites
+      - keep private hook trust state outside Git
+  adapter_export:
+    description: Generate, check, or repair provider adapter surfaces from canonical Hydra modules and knowledge.
+    preferred_traits:
+      - dry_run
+      - diff_check
+      - canonical_source_markers
+      - idempotent
+    requirements:
+      - keep .hydra-framework canonical
+      - identify generated source where practical
+      - validate provider surfaces after export
+  token_measurement:
+    description: Measure and attribute token, cost, retry, and context pressure for Hydra instructions, tools, workflows, and agent loops.
+    preferred_traits:
+      - provider_neutral_metrics
+      - reproducible
+      - separates_token_classes
+      - per_task_attribution
+      - private_by_default
+    requirements:
+      - preserve literals exactly when measuring compression
+      - benchmark shared policy changes before adoption
+      - do not lossy-compress canonical knowledge
+      - distinguish input, cached-input, output, reasoning, and tool-output volume where available
+      - record retry counts and loop halts when debugging behavior drives cost
+      - keep billing exports, API keys, and machine-local telemetry outside Git
+  memory_recall:
+    description: Retrieve governed memory from canonical Hydra state or approved auxiliary memory backends.
+    preferred_traits:
+      - provenance
+      - namespace_scoped
+      - supports_supersession
+      - access_control_aware
+    requirements:
+      - treat .hydra-framework as canonical shared memory
+      - distinguish deterministic, tool-mediated, and model-discretion capture
+      - keep secrets and private backend configuration outside Git

@@ -1,0 +1,22 @@
+{
+  "exit_code": 0,
+  "manifest": {
+    ".claude/skills/deploy/SKILL.md": "29869ea1aa42a0e36a227046cd9b50e330afe44dcbec05965e474d8cd5cb5639",
+    ".hydra-framework/README.md": "0de5f42b131305a48c4775ac871045712943998891b583e4381784801df42f4b",
+    ".hydra-framework/adapters/providers/claude/capability-map.yaml": "b003af671c56a0420ad81e7ad9b88a94b6f78d330e086a7d8fd61f6e1b9e23b6",
+    ".hydra-framework/adapters/providers/codex/capability-map.yaml": "b7477930e8b873de520503637055733760efabf4afe99e83739eda30ea03b632",
+    ".hydra-framework/core/placement-rules.md": "5ccfd85befd6aa3ff7d5dd0fc1417b21ae5e3186839a360348c8b8ed51dfb60b",
+    ".hydra-framework/manifest.yaml": "bc74566ab21d13c108337058c3db644e60fd8036887039425542e79efcb73c93",
+    ".hydra-framework/capabilities/agents/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".hydra-framework/capabilities/skills/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".hydra-framework/capabilities/skills/deploy/metadata.yaml": "a1a297cc6239d8da5fbb29836b767d66d3e386ca9869483f6ba3b3165f62c139",
+    ".hydra-framework/capabilities/skills/deploy/skill.md": "df208c6ad0a4d754a39dc8e6f9fe115a0089c555cdf313e21b9d2253646423b9",
+    ".hydra-framework/tasks/personal/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".hydra-framework/tasks/templates/checkpoint.md": "25f014f86a8490b4c636b360b343e8d2a8cc818c68948a3d4d243d928b7c0d99",
+    ".hydra-framework/tasks/templates/task.md": "32dd805b125370ccb27117f3984a894c773d0685fcd378aa6cbce3da715dba10",
+    "AGENTS.md": "a52ae73fc0a471d277c57a8c65af99c0b3e814f984b2ead607c36d5115eb12bb",
+    "AI_SYSTEM.md": "5a1cc2ad0944ad277aa08fe46d44c654ef5fa0256d6ca91925a2af23d6dfa5d6"
+  },
+  "stderr": "",
+  "stdout": "Hydra provider surfaces: 1 file(s)\n- generated and current: 0\n- orphaned: 1\n  .claude/skills/deploy/SKILL.md: hand-authored skill; promote to .hydra-framework/capabilities/skills/deploy/skill.md\n- drifted: 0\n- stale: 0\n\npromoted: .hydra-framework/capabilities/skills/deploy/skill.md\n\nReview each promoted file, then run `hydra.py export-adapters`.\nPromoted metadata is marked `certainty: inferred` and `scope: repo-local`.\n"
+}

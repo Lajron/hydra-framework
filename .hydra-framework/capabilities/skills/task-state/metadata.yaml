@@ -1,0 +1,26 @@
+schema: hydra-framework.skill.v2
+hydra_id: hydra://capability/skill/task-state
+uid: 9d8cdafc-1bd4-4c53-8859-ca64c7414cae
+schema_version: 3
+hydra_object_kind: skill
+kind: command
+name: task-state
+description: Run the Hydra task-state lifecycle (start, checkpoint, complete, list) through the canonical helper.
+argument_hint: "[start|checkpoint|complete] [name]"
+allowed_tools: Bash(python3 .hydra-framework/scripts/hydra.py task *) Bash(python3 .hydra-framework/scripts/hydra.py validate)
+scope: common-seed
+maturity: seed
+owners:
+  team: hydra
+provider_requirements:
+  - read_files
+  - edit_files
+  - run_local_commands
+dependencies:
+  skills:
+    - task-lifecycle
+  workflows:
+    - task-lifecycle
+relations: []
+provenance:
+  sources: []

@@ -1,0 +1,30 @@
+schema: hydra-framework.skill.v2
+hydra_id: hydra://capability/skill/knowledge-unit
+uid: 4b77b871-fbbc-4e0c-8809-7cced96282f7
+schema_version: 3
+hydra_object_kind: skill
+kind: procedure
+name: knowledge-unit
+description: Write or revalidate one knowledge-package unit against its source of truth, recording divergences and out-of-scope findings instead of silently resolving them.
+scope: common-seed
+maturity: seed
+owners:
+  team: hydra
+provider_requirements:
+  - read_files
+  - edit_files
+  - run_local_commands
+dependencies:
+  knowledge:
+    - knowledge-packages
+    - certainty-model
+  skills:
+    - repository-inspection
+  workflows:
+    - material-migration
+    - task-lifecycle
+relations:
+  - hydra://capability/workflow/material-migration
+  - hydra://capability/skill/repository-inspection
+provenance:
+  sources: []
